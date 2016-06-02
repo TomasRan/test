@@ -1,8 +1,59 @@
 <!doctype html>
 <html>
 	<head>
-		<title></title>
+		<title>放缩测试</title>
+		<meta charset='utf-8'>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;	
+			}
+
+			.outside {
+				margin-left: 200px;			
+				margin-top: 200px;
+			} 
+
+			.scale-1 {
+				width: 100px;
+				height: 100px;
+				background: red;	
+				border-radius: 50px 0px 0px 50px;
+				transform: scale(2, 1);
+			}
+
+			.scale-2 {
+				width: 100px;
+				height: 100px;
+				background: blue;	
+				border-radius: 50px 0px 0px 50px;
+				transform: scale(-1, -1);
+			}
+
+			.scale-3 {
+				width: 100px;
+				height: 100px;
+				background: yellow;	
+				border-radius: 50px 0px 0px 50px;
+				transform: scale(1, -1);
+			}
+
+			.scale-4 {
+				width: 100px;
+				height: 100px;
+				background: green;	
+				border-radius: 50px 0px 0px 50px;
+				transform: scale(-1, 1);
+				transform-origin: top;
+			}
+		</style>
 	</head>
 	<body>
+		<div class='outside'>
+			<div class='scale-1'>放缩测试</div>
+			<div class='scale-2'>放缩测试</div>
+			<div class='scale-3'>放缩测试</div>
+			<div class='scale-4'>放缩测试</div>
+		<div>
 	</body>
 </html>
