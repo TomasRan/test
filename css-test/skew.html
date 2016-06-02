@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<title>倾斜测试</title>
+		<meta charset='utf-8'>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;	
+			}
+
+			.skew-1 {
+				width: 200px;
+				height: 100px;
+				background: red;
+				transform: skew(10deg, 0);
+			}
+
+			.skew-2 {
+				width: 200px;
+				height: 100px;
+				background: blue;
+				transform: skew(10deg, 10deg);
+			}
+
+			.skew-3 {
+				width: 200px;
+				height: 100px;
+				background: yellow;
+				transform: skew(-90deg, 0);
+			}
+		</style>
+	</head>
+	<body>
+		<div class='skew-1'></div>
+		<div class='skew-2'></div>
+		<div class='skew-3'></div>
+	</body>
+	<script src='./prefixfree.min.js'></script>
+</html>
